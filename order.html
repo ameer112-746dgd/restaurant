@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Confirmation</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Add your custom CSS styles here */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Order Confirmation</h1>
+    <form id="orderForm">
+      <div class="form-group">
+        <label for="productQuantity">Quantity:</label>
+        <input type="number" class="form-control" id="productQuantity" min="1" value="1">
+      </div>
+      <div class="form-group">
+        <label for="productPrice">Price per item:</label>
+        <input type="number" class="form-control" id="productPrice" value="10.99" disabled>
+      </div>
+      <div class="form-group">
+        <label for="totalAmount">Total Amount:</label>
+        <input type="number" class="form-control" id="totalAmount" disabled>
+      </div>
+      <button type="submit" class="btn btn-primary">Place Order</button>
+    </form>
+  </div>
+
+  <script>
+    // Calculate total amount based on quantity
+    document.getElementById('orderForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      var quantity = parseInt(document.getElementById('productQuantity').value);
+      var price = parseFloat(document.getElementById('productPrice').value);
+
+      var totalAmount = quantity * price;
+      document.getElementById('totalAmount').value = totalAmount.toFixed(2);
+    });
+  </script>
+</body>
+</html>
