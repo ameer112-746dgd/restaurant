@@ -1,0 +1,149 @@
+
+  
+    [{
+        "id": 1,
+        "name": "Cheesy Bacon Burger",
+        "object": "A mouthwatering burger with a juicy beef patty, melted cheese, and crispy bacon.",
+        "title": "The Ultimate Cheesy Bacon Burger",
+        "description": "Indulge in the perfect combination of savory beef, gooey cheese, and crispy bacon. Served with a side of golden fries.",
+        "price": "$10.99",
+        "rating": "⭐⭐⭐⭐⭐"
+      },
+      {
+        "id": 2,
+        "name": "Veggie Delight Wrap",
+        "object": "A flavorful wrap filled with fresh vegetables, hummus, and tangy dressing.",
+        "title": "Garden Fresh Veggie Delight Wrap",
+        "description": "Experience a burst of flavors with this healthy and satisfying wrap packed with crisp veggies, creamy hummus, and zesty dressing.",
+        "price": "$8.99",
+        "rating": "⭐⭐⭐⭐"
+      },
+      {
+        "id": 3,
+        "name": "Chocolate Lava Cake",
+        "object": "A decadent chocolate cake with a molten, gooey center.",
+        "title": "Divine Chocolate Lava Cake",
+        "description": "Dive into pure chocolate bliss with this rich and indulgent dessert. The warm, oozing center is a delightful surprise for your taste buds.",
+        "price": "$6.99",
+        "rating": "⭐⭐⭐⭐⭐"
+      },
+      {
+        "id": 4,
+        "name": "Cheesy Bacon Burger",
+        "object": "A mouthwatering burger with a juicy beef patty, melted cheese, and crispy bacon.",
+        "title": "The Ultimate Cheesy Bacon Burger",
+        "description": "Indulge in the perfect combination of savory beef, gooey cheese, and crispy bacon. Served with a side of golden fries.",
+        "price": "$10.99",
+        "rating": "⭐⭐⭐⭐⭐"
+      },
+     {
+       "id": 5,
+       "Name": "Veggie Delight Wrap",
+       "Object": "A flavorful wrap filled with fresh vegetables, hummus, and tangy dressing.",
+       "Title": "Garden Fresh Veggie Delight Wrap",
+       "Description": "Experience a burst of flavors with this healthy and satisfying wrap packed with crisp veggies, creamy hummus, and zesty dressing.",
+       "Price": "$8.99",
+       "Rating": "⭐⭐⭐⭐"
+      },
+     {
+      "id": 6,
+      "Name": "Chocolate Lava Cake",
+      "Object": "A decadent chocolate cake with a molten, gooey center.",
+      "Title": "Divine Chocolate Lava Cake",
+      "Description": "Dive into pure chocolate bliss with this rich and indulgent dessert. The warm, oozing center is a delightful surprise for your taste buds.",
+      "Price": "$6.99",
+      "Rating": "⭐⭐⭐⭐⭐"
+      },
+     {
+     "id": 7,
+     "Name": "Sushi Rolls",
+     "Object": "Fresh seafood and vegetables wrapped in seasoned rice and seaweed.",
+     "Title": "Exquisite Sushi Rolls",
+     "Description": "Dive into a world of delicate flavors with these beautifully crafted sushi rolls. Each bite offers a perfect balance of textures and tastes.",
+     "Price": "$14.99",
+     "Rating": "⭐⭐⭐⭐⭐"
+     },
+     {
+      "id": 8,
+      "Name": "Chicken Tikka Masala",
+      "Object": "Tender chicken cooked in a rich and creamy tomato-based sauce.",
+      "Title": "Flavorful Chicken Tikka Masala",
+      "Description": "Indulge in the aromatic spices and creamy goodness of this classic Indian dish. The tender chicken is perfectly complemented by the luscious tomato sauce.",
+      "Price": "$11.99",
+      "Rating": "⭐⭐⭐⭐"
+    },
+    {
+      "id": 9,
+      "Name": "Pad Thai",
+      "Object": "Stir-fried rice noodles with shrimp, tofu, bean sprouts, and peanuts.",
+      "Title": "Authentic Pad Thai",
+      "Description": "Embark on a culinary journey with this iconic Thai dish. The combination of noodles, fresh ingredients, and tangy flavors will transport you to the streets of Thailand.",
+      "Price": "$10.99",
+      "Rating": "⭐⭐⭐⭐⭐"
+    },
+    {
+      "id": 10,
+      "Name": "BBQ Ribs",
+      "Object": "Slow-cooked ribs slathered in tangy barbecue sauce.",
+      "Title": "Finger-licking BBQ Ribs",
+      "Description": "Sink your teeth into these tender and succulent ribs, glazed with a mouthwatering barbecue sauce. It's a messy, delicious experience you won't want to miss.",
+      "Price": "$15.99",
+      "Rating": "⭐⭐⭐⭐⭐"
+    },
+    {
+      "id": 11,
+      "Name": "Margherita Flatbread",
+      "Object": "Crispy flatbread topped with fresh tomatoes, mozzarella, and basil.",
+      "Title": "Gourmet Margherita Flatbread",
+      "Description": "Elevate your taste buds with this delectable flatbread. The combination of tangy tomatoes, creamy mozzarella, and fragrant basil will take your palate on a delicious journey.",
+      "Price": "$9.99",
+      "Rating": "⭐⭐⭐⭐"
+    },
+    {
+      "id": 12,
+      "Name": "Tacos al Pastor",
+      "Object": "Marinated pork cooked on a vertical spit, served in soft tortillas with pineapple and cilantro.",
+      "Title": "Authentic Tacos al Pastor",
+      "Description": "Transport yourself to the streets of Mexico with these flavorful tacos. The juicy marinated pork, combined with the sweetness of pineapple and the freshness of cilantro, creates a tantalizing taste experience.",
+      "Price": "$2.99 per taco",
+      "Rating": "⭐⭐⭐⭐⭐"
+    },
+    {
+      "id": 13,
+      "Name": "Lobster Roll",
+      "Object": "Succulent chunks of lobster meat tossed in mayo, served in a buttery roll.",
+      "Title": "Indulgent Lobster Roll",
+      "Description": "Treat yourself to a taste of luxury with this decadent lobster roll. The tender lobster meat, creamy mayo, and buttery roll come together to create a truly indulgent experience.",
+      "Price": "$19.99",
+      "Rating": "⭐⭐⭐⭐⭐"
+    },
+    {
+      "id": 14,
+       "Name": "Biryani",
+       "Object": "Fragrant rice dish cooked with aromatic spices, meat (such as chicken or mutton), and vegetables.",
+       "Title": "Flavorful Biryani Delight",
+       "Description": "Immerse yourself in the flavors of India with this aromatic and flavorful biryani. Each spoonful of the perfectly spiced rice, tender meat, and vibrant vegetables will transport you to a culinary paradise.",
+       "Price": "$12.99",
+       "Rating": "⭐⭐⭐⭐"
+     },
+     {
+      "id": 15,
+      "Name": "Gyoza",
+      "Object": "Japanese dumplings filled with ground meat and vegetables, pan-fried to perfection.",
+      "Title": "Crispy Gyoza Delights",
+      "Description": "Experience a burst of flavors with these crispy and juicy Japanese dumplings. The combination of savory fillings, delicate wrappers, and a perfectly seared bottom will leave you craving for more.",
+      "Price": "$6.99 for 6 pieces",
+      "Rating": "⭐⭐⭐⭐"
+    },
+    {
+      "id": 15,
+      "Name": "Gyoza",
+      "Object": "Japanese dumplings filled with ground meat and vegetables, pan-fried to perfection.",
+      "Title": "Crispy Gyoza Delights",
+      "Description": "Experience a burst of flavors with these crispy and juicy Japanese dumplings. The combination of savory fillings, delicate wrappers, and a perfectly seared bottom will leave you craving for more.",
+      "Price": "$6.99 for 6 pieces",
+      "Rating": "⭐⭐⭐⭐",
+      "Image": "<img src='gyoza.jpg' alt='Gyoza Dumplings'>"
+    }
+]
+     

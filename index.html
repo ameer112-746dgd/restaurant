@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ameer Restaurant</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="stylesheets/mystyle.css" rel="stylesheet" >
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="scripts/myscript.js"></script>
+<style>
+.dd {
+	position: relative;
+	display: inline-block;
+}
+.dropdown-con {
+
+	min-width: 75px;
+	padding: 7px 10px;
+	background-color: red;
+	display: none;
+	z-index: 1;
+}
+
+.dd:hover .dropdown-con {
+	display:block;
+}
+
+
+</style>
+	</head>
+		
+<body class="container bg-dark">
+
+	<header>
+		<img src="images/my-logo-Transparent.png.png" alt="resturant logo"class="logo rounded"> 
+		<h1 class="ay text-danger fw-bold bg-light ">Ameer Restaurant</h1>  
+	</header>
+	<nav>
+		<ul class="nav justify-content-center">
+			<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+			<li class="nav-item dd">
+			<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Menu</a>
+            <ul class="dropdown-con">
+	            <li class="dropdown-item"> <a href="african.html" class="nav-link"> African Cuisine </a></li>
+				<li class="dropdown-item"> <a href="chinese.html" class="nav-link"> Chinese Cuisine </a></li>
+				<li class="dropdown-item"> <a href="eng.html" class="nav-link"> English Cuisine </a></li>
+			</ul>
+			</li>
+			<li class="nav-item"><a href="reservation.html" class="nav-link">Reservations</a></li>
+			<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+			<li class="nav-item"><a href="about us.html" class="nav-link">About Us</a></li>
+
+		</ul>
+		
+	</nav> 
+		<section style="margin: 15px;">
+<div class="carousel slide" data-bs-ride="carousel">
+	<div class="carousel-inner">
+
+<div class="carousel-item active">
+	<img src="images/my3.jpg" class="d-block w-100" alt="African dinning" >
+</div>
+
+<div class="carousel-item">
+	<img src="images/my2.jpg" class="d-block w-100" alt="African dinning" >
+</div>
+
+<div class="carousel-item ">
+	<img src="images/my1.jpg " class="d-block w-100" alt="African dinning" >
+</div>
+
+<div class="carousel-item">
+	<img src="images/my4.jpg" class="d-block w-100" alt="African dinning" >
+</div>
+
+<div class="carousel-item">
+	<img src="images/my5.jpg" class="d-block w-100" alt="African dinning" >
+</div>
+
+<div class="carousel-item">
+	<img src="images/my6.jpeg" class="d-block w-100" alt="African dinning" >
+</div>
+  </div>
+
+  </div>
+  </section>
+  <section class="food-menu">
+	<h2 class="h2"> Available menu </h2>
+	  <div class="row ">
+		<style>
+			.h2{
+				background-color: rgb(255, 0, 43);
+				text-align: center;
+			}
+		</style>
+
+		  <style>
+			.product {
+			  display: inline-block;
+			  border: 1px solid #ff0a0a;
+			  border-radius: 10px;
+			  padding: 10px;
+			  margin-right: 10px;
+			  margin-bottom: 20px;
+			}
+		  
+			.product img {
+			  border: 1px solid #ffffff;
+			  border-radius: 10px;
+			  width: 250px; /* Adjust the width as needed */
+			  height: 250px; /* Adjust the height as needed */
+			}
+		  
+			
+		  
+			body {
+			  text-align: center;
+			  color: white;
+			}
+			.card {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				height: auto;
+				width :auto;
+				margin-top: 10px;
+			  }
+			  
+			  .card-img-bottom {
+				height: 200px;
+				width: auto;
+				object-fit: cover;
+				 }
+				 .col a {
+					color: rgb(8, 38, 235);
+					text-decoration: none;
+					
+				}
+				.card-body {
+					height: 200px; /* Adjust the height to your desired value */
+					overflow: hidden;
+				  }
+				  
+		</style>
+
+		<!-- <div class="card" style="width: 18rem;">
+			<img src="your-image.jpg" class="card-img-top" alt="Image">
+			<div class="card-body">
+			  <h5 class="card-title">Card Title</h5>
+			  <p class="card-text">Some quick example text to give more information about the card.</p>
+			  <a href="#" class="btn btn-primary">Read More</a>
+			</div>-->
+		 
+		</div>
+		</head>
+		<body>
+		  <div id="productContainer" class=""></div>
+		
+		  <script>
+		    var counter = 0
+			const products = [
+			{
+				id: 1,
+				name: "Cheesy Bacon Burger",
+				description: "A mouthwatering burger with a juicy beef patty, melted cheese, and crispy bacon.",
+				price: "$10.99",
+				rating: "⭐⭐⭐⭐⭐"
+			  },
+			  {
+				id: 2,
+				name: "Veggie Delight Wrap",
+				description:"A flavorful wrap filled with fresh vegetables, hummus, and tangy dressing.",
+				price: "$8.99",
+				rating: "⭐⭐⭐⭐"
+			  },
+			  {
+				id: 3,
+				name :"Chocolate Lava Cake",
+				description:"A decadent chocolate cake with a molten, gooey center.",
+				price: "$6.99",
+				rating: "⭐⭐⭐⭐⭐"
+			  },
+			  {
+				id: 4,
+				name: "Cheesy Bacon Burger",
+				description: "A mouthwatering burger with a juicy beef patty, melted cheese, and crispy bacon.",
+				price: "$10.99",
+				rating: "⭐⭐⭐⭐⭐"
+			  },
+			  {
+				id: 5,
+				Name: "Veggie Delight Wrap",
+				Description: "A flavorful wrap filled with fresh vegetables, hummus, and tangy dressing.",
+				Price: "$8.99",
+				Rating: "⭐⭐⭐⭐"
+			  },
+			  {
+				id: 6,
+				Name: "Chocolate Lava Cake",
+				Description:"A decadent chocolate cake with a molten, gooey center.",
+				Price: "$6.99",
+				Rating: "⭐⭐⭐⭐⭐"
+			  },
+			  {
+				id: 7,
+				Name: "Sushi Rolls",
+				Description:"Fresh seafood and vegetables wrapped in seasoned rice and seaweed.",
+				Price: "$14.99",
+				Rating: "⭐⭐⭐⭐⭐"
+			  },
+			  {
+				id: 8,
+				Name: "Chicken Tikka Masala",
+				Description: "Tender chicken cooked in a rich and creamy tomato-based sauce.",
+				Price: "$11.99",
+				Rating: "⭐⭐⭐⭐"
+			  },
+		    ];
+		
+			const productContainer = document.getElementById("productContainer");
+		var rows = []
+	    let divRow = document.createElement("div");
+        divRow.classList.add("row")
+	
+			products.forEach((product) => {
+				/*
+		 <div class="column rounded text-dark rounded bg-light">
+
+		<div class="card" style="width: 100%">
+
+			<img src="images/Amala.jpg.jpeg" alt="resturant" height="200" class="card-img-bottom" onclick="showSrc()" /> 
+			<div class="card-body">
+				<h4 class="card-title">Amala</h4>
+				<p class="card-text"> Amala with fish and smoking meat 
+					<a href="#" class="btn btn-danger">Order </a>
+				</p>
+
+			</div>
+		    </div>
+
+			<div class="row">
+<div class="column"> </div>
+<div class="column"> </div>
+<div class="column"> </div>
+<div class="column"> </div>
+			</div>
+
+<div class="row">
+<div class="column"> </div>
+<div class="column"> </div>
+<div class="column"> </div>
+<div class="column"> </div>
+			</div>
+
+<div class="row">
+<div class="column"> </div>
+<div class="column"> </div>
+<div class="column"> </div>
+<div class="column"> </div>
+			</div>
+		  
+	</div> */
+	if (counter > 0 && counter % 4 === 0) {
+		rows.push(divRow);
+		divRow = document.createElement("div");
+		let c = "counter" + counter;
+		divRow.classList.add("row", c);
+	  }         
+
+const productElement = document.createElement("div");
+productElement.classList.add("column", "rounded", "text-dark", "bg-light");
+
+const cardDiv = document.createElement("div");
+cardDiv.classList.add("card");
+productElement.appendChild(cardDiv);
+
+const cardBod = document.createElement("div");
+cardBod.classList.add("card-body");
+cardDiv.appendChild(cardBod);
+
+const h4Tag = document.createElement("h4");
+h4Tag.classList.add("card-title");
+h4Tag.textContent = product.title;
+cardBod.appendChild(h4Tag);
+
+const pTag = document.createElement("p");
+pTag.classList.add("card-text");
+pTag.textContent = product.description;
+cardBod.appendChild(pTag);
+
+const HTag = document.createElement("a");
+HTag.href = window.location.href.replace("index.html", "pro.html") + "?id=" + product.id;
+HTag.classList.add("btn", "btn-danger");
+HTag.textContent = "Order";
+cardBod.appendChild(HTag);
+
+const imageElement = document.createElement("img");
+			  imageElement.classList.add("card-img-bottom")
+			
+			  imageElement.onClick = "showSrc()"
+			  imageElement.src = product.thumbnail;
+			  cardDiv.appendChild(imageElement);
+
+			/*  const productElement = document.createElement("div");
+			  productElement.classList.add("column","rounded","text-dark", "bg-light");
+		      const cardDiv = document.createElement("div")
+			  cardDiv.classList.add("card")
+              productElement.appendChild(cardDiv)
+			  const cardBod = document.createElement("div")
+			  cardBod.classList.add("card-body")
+			  cardDiv.appendChild(cardBod)
+			  const h4Tag = document.createElement("h4")
+			  h4Tag.classList.add("card-title")
+			  h4Tag.textContent = product.title
+			  cardBod.appendChild(h4Tag)
+			  const pTag = document.createElement("P")
+			  pTag.classList.add("card-text")
+			  pTag.textContent = product.description;
+			  cardBod.appendChild(pTag)
+			  const HTag = document.createElement("a")
+			  HTag.href = window.location.href.replace("index.html","pro.html") +"?id="+product.id
+			  HTag.classList.add("btn", "btn-danger")
+			  HTag.textContent = "Order"
+			  pTag.appendChild(HTag)*/
+
+			  // Create an image element
+			  
+		
+
+			  /*
+			  // Create a title element
+			  const titleElement = document.createElement("h2");
+			  titleElement.textContent = product.title;
+			  productElement.appendChild(titleElement);
+		
+			  // Create a description element
+			  const descriptionElement = document.createElement("p");
+			  descriptionElement.textContent = product.description;
+			  productElement.appendChild(descriptionElement);
+		
+			  // Create a price element
+			  const priceElement = document.createElement("p");
+			  const discountedPrice = product.price - (product.price * (product.discountPercentage / 100));
+			  priceElement.textContent = `Price: $${discountedPrice.toFixed(2)} (Discounted from $${product.price})`;
+			  productElement.appendChild(priceElement);
+		
+			  // Create a rating element
+			  const ratingElement = document.createElement("p");
+			  ratingElement.textContent = `Rating: ${product.rating}/5`;
+			  productElement.appendChild(ratingElement);
+		
+			  // Create a stock element
+			  const stockElement = document.createElement("p");
+			  stockElement.textContent = `Stock: ${product.stock}`;
+			  productElement.appendChild(stockElement);
+		
+			  // Create a brand element
+			  const brandElement = document.createElement("p");
+			  brandElement.textContent = `Brand: ${product.brand}`;
+			  productElement.appendChild(brandElement);
+		
+			  // Create a category element
+			  const categoryElement = document.createElement("p");
+			  categoryElement.textContent = `Category: ${product.category}`;
+			  productElement.appendChild(categoryElement);
+		*/
+			  // Append the product element to the container
+			  divRow.appendChild(productElement);
+			  counter++
+
+			});
+	rows.forEach(row => {
+		productContainer.appendChild(row)
+	})
+		</script>
+<!--
+	   <div class="column rounded text-dark rounded bg-light">
+
+		<div class="card" style="width: 100%">
+
+			<img src="images/Amala.jpg.jpeg" alt="resturant" height="200" class="card-img-bottom" onclick="showSrc()" /> 
+			<div class="card-body">
+				<h4 class="card-title">Amala</h4>
+				<p class="card-text"> Amala with fish and smoking meat 
+					<a href="#" class="btn btn-danger">Order </a>
+				</p>
+
+			</div>
+		    </div>
+		  
+	</div>
+	
+	 <div class="column rounded text-dark rounded bg-light">
+	   <div class="card" style="width: 100%">
+
+		  <img src="images/Beans and plantain.jpg.jpeg" alt="resturant" height="200" class="card-img-bottom" onmouseout="returnimage()" onmouseover="changeimageOnHover()" />
+		  <div class="card-body"> 
+			<h4 class="card-title">Beans</h4>
+			<p class="card-text"> Beans and plantain
+				<a href="#" class="btn btn-danger">Order </a>
+			</p>
+
+		</div>
+		</div>
+	
+	</div>	
+		  
+	<div class="column rounded text-dark rounded bg-light">
+		<div class="card" style="width: 100%"></div>
+		 
+		  <img src="images/Cheese%20Pizza.jpg.jpeg" alt="resturant" height="200" class="class-img-bottom" /> 
+		  <div class="card-body"> 
+			<h4 class="card-title">Cheese</h4>
+			<p class="card-text">Cheese and Pizza
+				<a href="#" class="btn btn-danger">Order </a>
+			</p>
+
+		</div>
+		</div>
+	
+
+	<div class="column rounded text-dark rounded bg-light">
+		<div class="card" style="width: 100%"></div>
+		  <img src="images/Chickenand%20chip's.jpg.jpeg" alt="resturant" height="200" class="rounded"/> 
+		  <div class="card-body"> 
+			<h4 class="card-title">Chicken</h4>
+			<p class="card-text">Chicken and chip
+				<a href="#" class="btn btn-danger">Order </a>
+			</p>
+
+		</div>
+		</div>
+	
+	</div>
+
+	<div class="column rounded text-dark rounded bg-light">
+		<div class="card" style="width: 100%"></div>
+		  <img src="images/Food Cake with Three-Berry.jpg.jpeg" alt="resturant" height="200" class="rounded"/> 
+		  <div class="card-body"> 
+			<h4 class="card-title">Cake</h4>
+			<p class="card-text">food cake
+				<a href="#" class="btn btn-danger">Order </a>
+			</p>
+
+		</div>
+		</div>
+	
+	</div>
+		 
+	<div class="column rounded text-dark rounded bg-light">
+		<div class="card" style="width: 100%"></div>
+		  <img src="images/Fruit Salad.jpg.jpeg" alt="resturant" height="200" class="rounded"/> 
+		  <div class="card-body"> 
+			<h4 class="card-title">Fruit</h4>
+			<p class="card-text">Fruit Salad
+				<a href="#" class="btn btn-danger">Order </a>
+			</p>
+
+		</div>
+		</div>
+	
+	</div>
+		  
+	<div class="column rounded text-dark rounded bg-light">
+		<div class="card" style="width: 100%"></div>
+		  <img src="images/Indomie spicy.jpg.jpeg" alt="resturant" height="200" class="rounded"/> 
+		  <div class="card-body"> 
+			<h4 class="card-title">Indomie</h4>
+			<p class="card-text">Indomie spicy
+				<a href="#" class="btn btn-danger">Order </a>
+			</p>
+
+		</div>
+		</div>
+	
+	</div>
+	
+	<div class="column rounded text-dark rounded bg-light">
+		<div class="card" style="width: 100%"></div>
+		  <img src="images/Iyan and egusi.jpg.jpeg" alt="resturant" height="200" class="rounded"/> 
+		  <div class="card-body"> 
+			<h4 class="card-title">Iyan</h4>
+			<p class="card-text">iyan and egusi soup
+				<a href="#" class="btn btn-danger">Order </a>
+			</p>
+
+		</div>
+		</div>
+	
+	</div>
+  </section>	
+
+<h2 class="hs" style="color: brown">Welcome to Ameer Restaurant!</h2>
+    <p class="p">At Food Restaurant, we pride ourselves on serving delicious and mouthwatering dishes that will satisfy your cravings. Our menu features a variety of options, from appetizers to desserts, all made with fresh and high-quality ingredients.</p>
+	<style>
+		.hs {
+		  display:inline-block;
+		}
+	  </style> 
+    <h3 class="sp hs" id="fr">Our Specialties</h3>
+    <ul class="p">
+      <li>Signature Burger</li>
+      <li>Seafood Pasta</li>
+      <li>Grilled Steak</li>
+      <li>Vegetarian Delight</li>
+    </ul>
+ 
+	<h3 id="ty"> Visit Us Today </h3> 
+	<img src="images/res.jpg.jpeg" alt="resturant">
+	 <p class="p">Whether you're looking for a cozy dinner for two or a group celebration, Food Restaurant is the perfect place to indulge in delectable food and create lasting memories. Visit us today and experience the true taste of culinary excellence!</p>
+ </div>
+</section>
+ 	<style>
+		.p{
+			color: rgb(240, 237, 233);
+		}
+	</style> --->
+
+ <footer class=" sake text-light bg-danger">
+	<div class="row">
+<div class="col">
+
+	<nav>
+		<ul class="nav justify-content-center flex-column">
+			<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+			<li class="nav-item"><a href="about us.html" class="nav-link">About Us</a></li>
+			<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+			<li class="nav-item"><a href="reservation.html" class="nav-link">reservation</a></li>
+		</ul>
+	</nav> 
+</div>
+
+<div class="col">
+    <h4>Address</h4>
+	<span>Address: 419,Main Street, Anytown, USA</span><br>
+	<img class="icon" src="images/icon4.png" alt="facebook Icon">
+	<span>phone number:+243 (555) 123-4567</span>
+</div>
+
+<div class="col">
+    <h4>Social Media Contact</h4>
+    <a href="https://www.facebook.com"><img class="icon" src="images/icon1.png" alt="Facebook Icon"></a>
+    <span><a href="https://www.facebook.com">facebook</a>
+    <a href="https://www.twitter.com"><img class="icon" src="images/icon4 .jpg.png" alt="Twitter Icon"></a>
+    <span><a href="https://www.twitter.com">twitter</a></span>
+    <a href="https://www.instagram.com"><img class="icon" src="images/icon3.jpeg" alt="Instagram Icon"></a>
+    <span><a href="https://www.instagram.com">Instagram</a></span>
+</div>
+	</div>
+   <p class="text-center">&copy; 2024 Ameer Restaurant. All rights reserved.</p>
+  </footer>
+</body>
+</html>
